@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confronto de Gigantes: Xiaomi vs Samsung</title>
+    <style>
+        /* CONFIGURAÇÕES GERAIS - VISUAL MODERNO */
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #2d3748;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* HEADER IMPACTANTE */
+        header {
+            background: linear-gradient(135deg, #ff6700 0%, #ff8533 49%, #1e3c72 51%, #2a5298 100%);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            margin-top: 15px;
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        /* CONTAINER DO CONTEÚDO */
+        main {
+            max-width: 1100px;
+            margin: -40px auto 40px auto; /* Faz o conteúdo subir um pouco sobre o header */
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #1a202c;
+            text-align: center;
+            font-size: 2em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        /* CARDS DOS CELULARES LADO A LADO */
+        .grid-celulares {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .card-celular {
+            flex: 1;
+            min-width: 280px;
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 6px solid #ccc;
+        }
+
+        /* Efeito de passar o mouse (Hover) nos cards */
+        .card-celular:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+        }
+
+        .xiaomi-border { border-top-color: #ff6700; }
+        .samsung-border { border-top-color: #1428a0; }
+
+        .img-celular {
+            height: 200px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+        /* TABELA ESTILIZADA */
+        .table-container {
+            overflow-x: auto;
+            margin-top: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+
+        th, td {
+            padding: 15px 20px;
+            text-align: center;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        th {
+            background-color: #edf2f7;
+            color: #4a5568;
+            font-weight: 600;
+        }
+
+        tr:hover {
+            background-color: #f7fafc;
+        }
+
+        /* BOTÃO INTERATIVO */
+        .btn-voto {
+            display: block;
+            width: 200px;
+            margin: 30px auto;
+            padding: 12px 24px;
+            background: #2b6cb0;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+            box-shadow: 0 4px 10px rgba(43, 108, 176, 0.3);
+            transition: all 0.2s;
+        }
+
+        .btn-voto:hover {
+            background: #2c5282;
+            box-shadow: 0 6px 15px rgba(43, 108, 176, 0.4);
+            transform: scale(1.05);
+        }
+
+        /* RODAPÉ */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #1a202c;
+            color: #a0aec0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Xiaomi vs Samsung</h1>
+        <p>Batalha dos Reis do Custo-Benefício em 2026</p>
+    </header>
+
+    <main>
+        <h2>Os Competidores</h2>
+        
+        <div class="grid-celulares">
+            <div class="card-celular xiaomi-border">
+                <img class="img-celular" src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400" alt="Smartphone Xiaomi">
+                <h3 style="color: #ff6700;">Redmi Note 13 Pro</h3>
+                <p>O monstro da fotografia barata e carregamento de foguete.</p>
+            </div>
+
+            <div class="card-celular samsung-border">
+                <img class="img-celular" src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=400" alt="Smartphone Samsung">
+                <h3 style="color: #1428a0;">Galaxy A55</h3>
+                <p>O rei da durabilidade, proteção contra água e tela perfeita.</p>
+            </div>
+        </div>
+
+        <h2>Ficha Técnica Lado a Lado</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Especificação</th>
+                        <th style="color: #ff6700;">Xiaomi Redmi Note 13 Pro</th>
+                        <th style="color: #1428a0;">Samsung Galaxy A55</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Câmera Traseira</strong></td>
+                        <td>200 Megapixels</td>
+                        <td>50 Megapixels</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Carregamento</strong></td>
+                        <td>67W (100% em 45 min)</td>
+                        <td>25W (Mais lento)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Proteção</strong></td>
+                        <td>IP54 (Apenas respingos)</td>
+                        <td>IP67 (Aguenta cair na piscina)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Material do Corpo</strong></td>
+                        <td>Plástico e Vidro</td>
+                        <td>Alumínio Premium e Vidro</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Veredito: Qual escolher?</h2>
+        <p style="text-align: center; line-height: 1.6; max-width: 700px; margin: 0 auto;">
+            Se o seu foco é jogar muito tempo sem se preocupar com bateria (já que ela carrega super rápido) e tirar fotos com resolução gigante, vá de <strong>Xiaomi</strong>. Mas se você é do tipo desastrado que deixa o celular cair no chão ou na água, e quer um aparelho que pareça mais "chique" e dure muitos anos, a <strong>Samsung</strong> é a escolha certa.
+        </p>
+
+        <a href="https://github.com" target="_blank" class="btn-voto">Ver Código no GitHub</a>
+    </main>
+
+    <footer>
+        <p>Trabalho de Tecnologia / Informática Aplicada</p>
+        <p>Criado com 💻 no VS Code por [Seu Nome] &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
