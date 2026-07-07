@@ -1,0 +1,30 @@
+/* Isso muda o estilo de toda a página */
+body {
+    background-color: #f0f4f8; /* Um fundo azul bem clarinho */
+    font-family: 'Arial', sans-serif; /* Uma fonte mais moderna */
+    color: #333333; /* Cor do texto (um cinza escuro) */
+    text-align: center; /* Centraliza tudo na tela */
+    padding: 50px;
+}
+
+/* Isso muda o estilo do título principal */
+h1 {
+    color: #2c3e50; /* Um azul escuro elegante */
+    font-size: 40px; /* Deixa o título maior */
+}
+
+/* Isso muda o estilo do botão/link */
+a {
+    display: inline-block;
+    background-color: #3498db; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaço dentro do botão */
+    text-decoration: none; /* Remove aquele sublinhado feio do link */
+    border-radius: 5px; /* Deixa as bordas arredondadas */
+    font-weight: bold;
+}
+
+/* Efeito quando passa o mouse por cima do botão */
+a:hover {
+    background-color: #2980b9; /* Fica um azul mais escuro */
+}
